@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">CountryMaster</string>
     <string name="imagen_del_lider">imagen del lider</string>
+    <string name="gobierna_tu_propia_nacion_como_quieras">Gobierna tu propia Nacion como quieras</string>
+    <string name="button">Iniciar Sesion</string>
+    <string name="button2">Registro</string>
 </resources>
