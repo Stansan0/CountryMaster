@@ -1,6 +1,9 @@
 package com.example.countrymaster
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +14,10 @@ class login1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login1)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        val buttonPrincipal = findViewById<Button>(R.id.buttonPrincipal)
+        Toast.makeText(this,"onCreate", Toast.LENGTH_SHORT).show();
+        buttonPrincipal.setOnClickListener {
+            startActivity(Intent(this,FondoMundo1::class.java))
         }
     }
 }
