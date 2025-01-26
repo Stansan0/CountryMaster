@@ -74,12 +74,15 @@
 
     <TextView
         android:id="@+id/textView4"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="328dp"
         android:layout_height="77dp"
         android:fontFamily="sans-serif-medium"
         android:text="Country Master"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFEB3B"
         android:textColorLink="#F6D509"
+        android:textCursorDrawable="?attr/selectableItemBackgroundBorderless"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
