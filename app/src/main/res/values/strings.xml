@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">CountryMaster</string>
     <string name="imagen_del_lider">imagen del lider</string>
+    <string name="imagen_de_fondo">imagen_de_fondo</string>
+    <string name="rectangulo_azul">rectangulo_azul</string>
+    <string name="rectangulo_blanco">rectangulo_azul</string>
 </resources>
