@@ -16,23 +16,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fondomundo" />
 
-    <ImageView
-        android:id="@+id/rectanguloBlanco"
-        android:layout_width="180dp"
-        android:layout_height="48dp"
-        android:contentDescription="@string/rectangulo_blanco"
-        android:src="@drawable/rectangle_6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.467" />
-
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="121dp"
-        android:layout_height="46dp"
+        android:layout_width="95dp"
+        android:layout_height="27dp"
+        android:ellipsize="middle"
         android:fontFamily="@font/inknut_antiqua_light"
         android:text="Usuario"
         android:textAlignment="textStart"
@@ -41,10 +29,22 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintVertical_bias="0.362" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextUser"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:hint="Usuario"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="305dp"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/RectanguloAzul"
@@ -59,25 +59,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.162" />
 
-    <ImageView
-        android:id="@+id/RectanguloBlanco"
-        android:layout_width="186dp"
-        android:layout_height="45dp"
-        android:contentDescription="@string/rectangulo_blanco"
-        android:src="@drawable/rectangle_6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.601" />
-
     <TextView
         android:id="@+id/textView4"
         style="@style/Widget.AppCompat.TextView"
-        android:layout_width="328dp"
-        android:layout_height="77dp"
+        android:layout_width="314dp"
+        android:layout_height="59dp"
         android:fontFamily="sans-serif-medium"
+        android:justificationMode="inter_word"
         android:text="Country Master"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFEB3B"
@@ -90,12 +78,12 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.200" />
+        app:layout_constraintVertical_bias="0.22" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="149dp"
-        android:layout_height="35dp"
+        android:layout_width="119dp"
+        android:layout_height="30dp"
         android:fontFamily="@font/inknut_antiqua_light"
         android:text="Contraseña"
         android:textAlignment="textStart"
@@ -104,7 +92,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.543" />
@@ -116,15 +103,54 @@
         android:layout_margin="100dp"
         android:layout_marginEnd="109dp"
         android:background="#22FFFFFF"
+        android:contentDescription="@string/hello_blank_fragment"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:layout_wrapBehaviorInParent="included"
         app:srcCompat="@drawable/bot_n_pixelart_dark_removebg_preview" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:focusable="auto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="447dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
