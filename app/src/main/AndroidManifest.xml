@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
         <activity
+            android:name=".gobierno1"
+            android:exported="false" />
+        <activity
+            android:name=".gobierno"
+            android:exported="false" />
+        <activity
             android:name=".FondoMundo1"
             android:exported="false" />
         <activity
