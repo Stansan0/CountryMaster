@@ -1,5 +1,6 @@
 package com.example.countrymaster
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
@@ -36,9 +37,9 @@ class FondoMundo1 : AppCompatActivity() {
             if (userDAO.checkUser(usuario, contraseña)) {
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
 
-                // Ir a la siguiente pantalla (comentar hasta que esté lista)
-//                val intent = Intent(this, MainActivity::class.java)
-//                startActivity(intent)
+                // Ir a la siguiente pantalla (ProblemsActivity)
+                val intent = Intent(this, nationentorno::class.java)
+                startActivity(intent)
             } else {
                 Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
             }
