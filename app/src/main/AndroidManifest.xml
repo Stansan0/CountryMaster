@@ -15,11 +15,17 @@
         <activity
             android:name=".gobierno1"
             android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".gobierno"-->
+<!--            android:exported="false" />-->
         <activity
-            android:name=".gobierno"
+            android:name=".Encuesta_2"
             android:exported="false" />
         <activity
             android:name=".FondoMundo1"
+            android:exported="false" />
+        <activity
+            android:name=".Encuesta_1"
             android:exported="false" />
         <activity
             android:name=".login1"
