@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contra"
+    android:background="@drawable/master">
+
+    <View
+        android:id="@+id/whiteRectangle"
+        android:layout_width="378dp"
+        android:layout_height="695dp"
+        android:background="#90FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stepTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Paso 5"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/whiteRectangle"
+        app:layout_constraintTop_toTopOf="@+id/whiteRectangle" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:text="Configuremos una contraseña"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/whiteRectangle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/stepTextView"
+        app:layout_constraintTop_toBottomOf="@+id/stepTextView" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Escribir una contraseña"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/whiteRectangle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/descriptionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="247dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Ingrese su contraseña"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/whiteRectangle"
+        app:layout_constraintStart_toStartOf="@+id/whiteRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextView" />
+
+    <TextView
+        android:id="@+id/repeatPasswordTextView"
+        android:layout_width="352dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Repetir contraseña"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/whiteRectangle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <EditText
+        android:id="@+id/repeatPasswordEditText"
+        android:layout_width="245dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Repita su contraseña"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/whiteRectangle"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="@+id/repeatPasswordTextView"
+        app:layout_constraintTop_toBottomOf="@+id/repeatPasswordTextView" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="189dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#3F51B5"
+        android:text="Crear Nacion"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/whiteRectangle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
