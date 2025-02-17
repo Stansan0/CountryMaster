@@ -13,6 +13,11 @@
         android:theme="@style/Theme.AppCompat"
         tools:targetApi="31">
         <activity
+            android:name=".nationentorno"
+            android:exported="false"
+            android:label="@string/title_activity_nationentorno"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
             android:name=".gobierno1"
             android:exported="false" />
 <!--        <activity-->
