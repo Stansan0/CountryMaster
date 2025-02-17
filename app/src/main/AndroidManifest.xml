@@ -17,7 +17,6 @@
             android:exported="false"
             android:label="@string/title_activity_nationentorno"
             android:theme="@style/Theme.AppCompat" />
-<<<<<<< HEAD
         <activity
             android:name=".gobierno1"
             android:exported="false" />
@@ -26,16 +25,19 @@
 <!--            android:exported="false" />-->
         <activity
             android:name=".Encuesta_2"
-=======
-        <activity
-            android:name=".gobierno1"
->>>>>>> Javier
             android:exported="false" />
+        <activity
+            android:name=".Encuesta_3"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".gobierno1"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".FondoMundo1"
             android:exported="false" />
         <activity
             android:name=".Encuesta_1"
+            android:theme="@style/Theme.AppCompat"
             android:exported="false" />
         <activity
             android:name=".login1"

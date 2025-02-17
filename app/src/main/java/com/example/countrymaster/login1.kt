@@ -21,6 +21,13 @@ class login1 : AppCompatActivity() {
             insets
         }
 
+        // Configurar el botón Registro con la acción de Intent
+        val RegistroButton = findViewById<Button>(R.id.buttonRegistro)
+        RegistroButton.setOnClickListener {
+            // Iniciar la actividad FondoMundo1
+            val intent = Intent(this, Encuesta_1::class.java)
+            startActivity(intent)
+        }
         // Configurar el botón 'Iniciar sesión' con la acción de Intent
         val iniciarSesionButton = findViewById<Button>(R.id.buttonInicioSesion)
         iniciarSesionButton.setOnClickListener {

@@ -1,6 +1,8 @@
 package com.example.countrymaster
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,13 @@ class Encuesta_1 : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val Encuesta1a2 = findViewById<Button>(R.id.nextButton1to2)
+        Encuesta1a2.setOnClickListener {
+            // Iniciar la actividad Encuesta2
+            val intent = Intent(this, Encuesta_2::class.java)
+            startActivity(intent)
         }
     }
 }

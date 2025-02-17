@@ -8,6 +8,12 @@
     tools:context=".Encuesta_1"
     android:background="@drawable/master">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.1" />
+
     <View
         android:id="@+id/whiteRectangle"
         android:layout_width="378dp"
@@ -53,6 +59,7 @@
         android:layout_height="wrap_content"
         android:text="Estoy totalmente en desacuerdo"
         android:textStyle="italic"
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/descriptionTextView"
         app:layout_constraintTop_toBottomOf="@+id/descriptionTextView"
         android:layout_marginTop="16dp"/>
@@ -63,6 +70,7 @@
         android:layout_height="wrap_content"
         android:text="Discrepar"
         android:textStyle="italic"
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/checkBox1"
         app:layout_constraintTop_toBottomOf="@+id/checkBox1"
         android:layout_marginTop="8dp"/>
@@ -73,6 +81,7 @@
         android:layout_height="wrap_content"
         android:text="Aceptar"
         android:textStyle="italic"
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/checkBox2"
         app:layout_constraintTop_toBottomOf="@+id/checkBox2"
         android:layout_marginTop="8dp"/>
@@ -83,6 +92,7 @@
         android:layout_height="wrap_content"
         android:text="Estoy totalmente de acuerdo"
         android:textStyle="italic"
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/checkBox3"
         app:layout_constraintTop_toBottomOf="@+id/checkBox3"
         android:layout_marginTop="8dp"/>
@@ -109,6 +119,7 @@
         android:layout_height="wrap_content"
         android:text="Estoy totalmente en desacuerdo"
         android:textStyle="italic"
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/descriptionTextView2"
         app:layout_constraintTop_toBottomOf="@+id/descriptionTextView2"
         android:layout_marginTop="16dp"/>
@@ -119,6 +130,7 @@
         android:layout_height="wrap_content"
         android:text="Discrepar"
         android:textStyle="italic"
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/checkBox5"
         app:layout_constraintTop_toBottomOf="@+id/checkBox5"
         android:layout_marginTop="8dp"/>
@@ -129,6 +141,7 @@
         android:layout_height="wrap_content"
         android:text="Aceptar"
         android:textStyle="italic"
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/checkBox6"
         app:layout_constraintTop_toBottomOf="@+id/checkBox6"
         android:layout_marginTop="8dp"/>
@@ -139,12 +152,13 @@
         android:layout_height="wrap_content"
         android:text="Estoy totalmente de acuerdo"
         android:textStyle="italic"
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/checkBox7"
         app:layout_constraintTop_toBottomOf="@+id/checkBox7"
         android:layout_marginTop="8dp"/>
 
     <Button
-        android:id="@+id/nextButton"
+        android:id="@+id/nextButton1to2"
         android:layout_width="116dp"
         android:layout_height="34dp"
         android:layout_marginTop="16dp"
@@ -155,6 +169,6 @@
         android:textColor="@android:color/white"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="@+id/whiteRectangle"
-        app:layout_constraintTop_toTopOf="@+id/whiteRectangle" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
