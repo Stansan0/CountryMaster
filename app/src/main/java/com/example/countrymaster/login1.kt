@@ -22,7 +22,7 @@ class login1 : AppCompatActivity() {
         }
 
         // Configurar el botón 'Iniciar sesión' con la acción de Intent
-        val iniciarSesionButton = findViewById<Button>(R.id.button)
+        val iniciarSesionButton = findViewById<Button>(R.id.buttonInicioSesion)
         iniciarSesionButton.setOnClickListener {
             // Iniciar la actividad FondoMundo1
             val intent = Intent(this, FondoMundo1::class.java)
